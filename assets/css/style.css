@@ -16,11 +16,10 @@ body{
   padding: 50px;
   color: white;
   text-align: center;
-  text-shadow: 2px 1px #333333;
+  text-shadow: 5px 1px 5px #000000;
   font-style: oblique;
-  border-radius: 5% 5% 5% 5%;
+  border-radius: 2%;
   opacity: .9;
-  border-style: outset;
   box-shadow: 3px 7px 4px #000000;
 }
 .item-2{
@@ -29,29 +28,32 @@ body{
   padding: 50px;
   color: white;
   text-align: center;
-  text-shadow: 2px 1px #333333;
-  border-radius: 1% 20% 1%;
+  text-shadow: 5px 1px 5px #000000;
+  border-radius: 2%;
   font-style: oblique;
-  border-style: outset;
   box-shadow: 3px 7px 4px #000000;
 }
 .item-3{
   background-color: #666666;
   grid-column: 1 / -1;
-  border-style: outset;
   box-shadow: 3px 7px 4px #000000;
   color: white;
   text-align: left;
-  text-shadow: 2px 1px #333333;
-  border-radius: 1% 1% 1% 1%;
+  text-shadow: 5px 1px 5px #000000;
+  border-radius: 2%;
+
 }
 .form-control{
   float: right;
-  background-color: #cfd8dc;
+  background-color: #9e9e9e;
+  border-color: black;
+  border-style: groove;
+  box-shadow: 3px 7px 4px #000000;
 }
 .form-control:focus{
   box-shadow: 11px 11px 11px rgba(255,255,255, 0.5);
   animation: pulse 2s infinite;
+  background-color: #ff8f00;
 }
 .header{
   font-size: 100%;
@@ -61,30 +63,33 @@ body{
   margin-left: 2%;
   width: 95%;
   grid-column: 1 / -1;
-  background-color: #cfd8dc;
+  background-color: #9e9e9e;
   text-align: left;
-  text-shadow: 1px 1px #333333;
-  border-radius: 3% 3% 3% 3%;
-  border-style: outset;
+  text-shadow: 5px 1px 5px #000000;
+  border-radius: 2%;
   box-shadow: 3px 7px 4px #000000;
 }
 th{
-  border-radius: 5% 5% 5% 5%;
+  border-radius: 2%;
   box-shadow: 3px 7px 4px #000000;
   padding: 1%;
+}
+td{
+  color: white;
 }
 .networking{
   opacity: 1;
   max-height: 50px;
   max-width: 50px;
-  border-style: outset;
+  box-shadow: 3px 7px 4px #000000;
+  margin-left: 60px;
 }
 .networking:hover{
   opacity: .5;
 }
 tr:hover{
   opacity: .8;
-  background-color: #eceff1;
+  background-color: #ff8f00;
   box-shadow: 11px 11px 11px rgba(255,255,255, 0.5);
   animation: pulse 2s infinite;
 }
@@ -93,13 +98,14 @@ tr:hover{
   margin-bottom: 5%;
 }
 #add-train-btn:hover{
-  background-color: #90caf9;
+  background-color: #ff8f00;
   box-shadow: 11px 11px 11px rgba(255,255,255, 0.5);
   animation: pulse 2s infinite;
 }
 #connect{
   background-color: #424242;
   margin-top: 5%;
+  box-shadow: 3px 7px 4px #000000;
 }
 @-webkit-keyframes pulse {
   0% {
