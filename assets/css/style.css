@@ -1,5 +1,5 @@
 body{
-  background-color: #263238;
+  background-color: #42a5f5;
   font-family: 'Supermercado One';
 }
 .wrapper{
@@ -58,8 +58,8 @@ body{
   grid-column: 1 / -1;
 }
 #train-table{
-  margin-left: 3%;
-  width: 93%;
+  margin-left: 2%;
+  width: 95%;
   grid-column: 1 / -1;
   background-color: #cfd8dc;
   text-align: left;
@@ -81,9 +81,6 @@ th{
 }
 .networking:hover{
   opacity: .5;
-}
-tr{
-
 }
 tr:hover{
   opacity: .8;

@@ -17,6 +17,9 @@
   <!-- Moment.js Reference -->
 
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/js/train.js"></script>
 
 </head>
 
@@ -33,58 +36,53 @@
 
     <!-- Current Train Schedule -->
 
-<h3 class="item-2"><strong>Current Train Schedule</strong></h3>
+    <h3 class="item-2"><strong>Current Train Schedule</strong></h3>
 
-      <table id="train-table">
-          <thead>
-          <tr class="item-2">
-            <th>Train Name</th>
-            <th>Destination</th>
-            <th>Frequency (min)</th>
-            <th>Next Arrival</th>
-            <th>Minutes Away</th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
+    <table id="train-table">
+      <thead>
+        <tr class="item-2">
+          <th>Train Name</th>
+          <th>Destination</th>
+          <th>Frequency (min)</th>
+          <th>Next Arrival</th>
+          <th>Minutes Away</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
 
     <!-- Add Train  -->
 
-        <div class="item-2" id="add-train-btn" type="submit">Add Time Table</div>
+    <div class="item-2" id="add-train-btn" type="submit">Add Time Table</div>
 
-        <!-- Entry Form -->
-          <div class="item-3">
-            <label for="train-name-input">Train Name</label>
-            <input class="form-control" id="train-name-input" type="text">
-          </div>
-          <div class="item-3">
-            <label for="destination-input">Destination</label>
-            <input class="form-control" id="destination-input" type="text">
-          </div>
-          <div class="item-3">
-            <label for="arrival-input">First Train Time (HH:MM -  am/pm)</label>
-            <input class="form-control" id="arrival-input" type="time">
-          </div>
-          <div class="item-3">
-            <label for="frequency-input">Frequency (min)</label>
-            <input class="form-control" id="frequency-input" type="number">
-          </div>
+    <!-- Entry Form -->
+    <div class="item-3">
+      <label for="train-name-input">Train Name</label>
+      <input class="form-control" id="train-name-input" type="text">
+    </div>
+    <div class="item-3">
+      <label for="destination-input">Destination</label>
+      <input class="form-control" id="destination-input" type="text">
+    </div>
+    <div class="item-3">
+      <label for="arrival-input">First Train Time (HH:MM -  am/pm)</label>
+      <input class="form-control" id="arrival-input" type="time">
+    </div>
+    <div class="item-3">
+      <label for="frequency-input">Frequency (min)</label>
+      <input class="form-control" id="frequency-input" type="number">
+    </div>
 
-<div>
-    <div id="connect">
-      <a href="https://github.com/luigicampbell" target="_blank"><img src="assets/images/github.png"   class="networking" alt="Github"></a>
-      <a href="https://www.linkedin.com/in/luigi-campbell-464838149/" target="_blank"><img src="assets/images/linkedin.png"   class="networking" alt="LinkedIn"></a>
-      <a href="https://stackoverflow.com/users/8793814/luigi" target="_blank"><img src="assets/images/stackoverflow.svg"   class="networking" alt="Stackoverflow"></a>
+    <div>
+      <div id="connect">
+        <a href="https://github.com/luigicampbell" target="_blank"><img src="assets/images/github.png"   class="networking" alt="Github"></a>
+        <a href="https://www.linkedin.com/in/luigi-campbell-464838149/" target="_blank"><img src="assets/images/linkedin.png"   class="networking" alt="LinkedIn"></a>
+        <a href="https://stackoverflow.com/users/8793814/luigi" target="_blank"><img src="assets/images/stackoverflow.svg"   class="networking" alt="Stackoverflow"></a>
+      </div>
     </div>
   </div>
-  </div>
 
-
-
-  <!-- JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="assets/js/train.js"></script>
 
 </body>
 
