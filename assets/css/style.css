@@ -40,6 +40,9 @@ body{
   grid-column: 1 / -1;
 }
 #train-table{
+  margin-left: 2%;
+  width: 95%;
+  grid-column: 1 / -1;
   background-color: #cfd8dc;
   text-align: left;
   text-shadow: 1px 1px #333333;
@@ -48,11 +51,9 @@ body{
   box-shadow: 3px 7px 4px #000000;
 }
 th{
-  grid-column: 50%;
   border-radius: 5% 5% 5% 5%;
   box-shadow: 3px 7px 4px #000000;
   padding: 1%;
-  gr
 }
 .networking{
   opacity: 1;
@@ -62,6 +63,9 @@ th{
 }
 .networking:hover{
   opacity: .5;
+}
+tr{
+
 }
 tr:hover{
   opacity: .8;
