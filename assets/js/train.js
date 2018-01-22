@@ -5,16 +5,16 @@ let timeApart;
 let nextTrain;
 let minutesToNextTrain;
 
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBmCE6avmFuqEPrYs2_0FG9xALs4J3Zw9o",
-    authDomain: "choochoo-4076b.firebaseapp.com",
-    databaseURL: "https://choochoo-4076b.firebaseio.com",
-    projectId: "choochoo-4076b",
-    storageBucket: "choochoo-4076b.appspot.com",
-    messagingSenderId: "532821342736"
-  };
-  firebase.initializeApp(config);
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyBmCE6avmFuqEPrYs2_0FG9xALs4J3Zw9o",
+  authDomain: "choochoo-4076b.firebaseapp.com",
+  databaseURL: "https://choochoo-4076b.firebaseio.com",
+  projectId: "choochoo-4076b",
+  storageBucket: "choochoo-4076b.appspot.com",
+  messagingSenderId: "532821342736"
+};
+firebase.initializeApp(config);
 
 
 var database = firebase.database();
@@ -28,11 +28,11 @@ $("#add-train-btn").on("click", function(event) {
   let trainDestination = $("#destination-input").val().trim();
   let trainArrival = moment($("#arrival-input").val().trim(), "HH:mm").format("X");
   let trainFrequency = $("#frequency-input").val().trim();
-// Logging values for form inputs
-console.log(trainName);
-console.log(trainDestination);
-console.log(trainArrival);
-console.log(trainFrequency);
+  // Logging values for form inputs
+  console.log(trainName);
+  console.log(trainDestination);
+  console.log(trainArrival);
+  console.log(trainFrequency);
 
   // Creates local object for holding train data
   let newTrain = {
@@ -74,7 +74,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   militaryTime = trainArrival;
 
   // Convert Military Time
-  militaryTimeConverted = moment(militaryTime, "hh:mm").subtract(1, "years");
+  militaryTimeConverted = moment(militaryTime, "hh:mm").subtract(1, "year");
 
   // Current Time
   currentTime=moment();
@@ -98,5 +98,5 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   console.log(trainArrival);
 
   // Add each train's data into the table
-  $("#train-table > tbody").append(`<tr><td>${trainName}</td><td> ${trainDestination}</td><td>${trainFrequency}</td><td> ${moment(nextTrain).format("hh:mm")}</td><td> ${minutesToNextTrain}</td><tr>`);
+  $("#train-table > tbody").append(`<tr><td>${trainName}</td><td> ${trainDestination}</td><td> ${trainFrequency} mins</td><td> ${moment(nextTrain).format("hh:mm")}</td><td> in ${minutesToNextTrain} mins</td><tr>`);
 });
