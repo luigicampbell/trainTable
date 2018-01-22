@@ -49,6 +49,10 @@ body{
   float: right;
   background-color: #cfd8dc;
 }
+.form-control:focus{
+  box-shadow: 11px 11px 11px rgba(255,255,255, 0.5);
+  animation: pulse 2s infinite;
+}
 .header{
   font-size: 100%;
   grid-column: 1 / -1;
