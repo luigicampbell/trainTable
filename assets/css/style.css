@@ -1,6 +1,6 @@
 body{
   background-color: #ef5350;
-  font-family: 'Supermercado One', cursive;
+  font-family: 'Supermercado One';
 }
 .wrapper{
   font-size: 65%;
@@ -45,4 +45,11 @@ body{
 }
 .networking:hover{
   opacity: .5;
+}
+h3:hover{
+  opacity: .8;
+}
+tr:hover{
+  opacity: .8;
+  background-color: #eceff1;
 }
