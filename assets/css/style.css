@@ -58,8 +58,8 @@ body{
   grid-column: 1 / -1;
 }
 #train-table{
-  margin-left: 2%;
-  width: 95%;
+  margin-left: 3%;
+  width: 93%;
   grid-column: 1 / -1;
   background-color: #cfd8dc;
   text-align: left;
