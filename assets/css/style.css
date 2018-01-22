@@ -40,9 +40,6 @@ body{
   text-shadow: 1px 1px #333333;
   border-radius: 5% 5% 5% 5%;
 }
-.table{
-  border-radius: 5% 5% 5% 5%;
-}
 .networking{
   opacity: 1;
   max-height: 50px;
@@ -65,6 +62,15 @@ tr:hover{
   background-color: #90caf9;
   box-shadow: 11px 11px 11px rgba(255,255,255, 0.5);
   animation: pulse 2s infinite;
+}
+#add-train-btn:focus{
+  background-color: #90caf9;
+  box-shadow: 11px 11px 11px rgba(255,255,255, 0.5);
+  animation: pulse 2s infinite;
+}
+#connect{
+  background-color: #bbdefb;
+  margin-top: 5%;
 }
 @-webkit-keyframes pulse {
   0% {
