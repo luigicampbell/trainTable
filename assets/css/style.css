@@ -35,6 +35,20 @@ body{
   border-style: outset;
   box-shadow: 3px 7px 4px #000000;
 }
+.item-3{
+  background-color: #666666;
+  grid-column: 1 / -1;
+  border-style: outset;
+  box-shadow: 3px 7px 4px #000000;
+  color: white;
+  text-align: left;
+  text-shadow: 2px 1px #333333;
+  border-radius: 1% 1% 1% 1%;
+}
+.form-control{
+  float: right;
+  background-color: #cfd8dc;
+}
 .header{
   font-size: 100%;
   grid-column: 1 / -1;
