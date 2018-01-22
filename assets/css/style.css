@@ -19,8 +19,9 @@ body{
   text-shadow: 2px 1px #333333;
   font-style: oblique;
   border-radius: 5% 5% 5% 5%;
-  opacity: .7;
+  opacity: .9;
   border-style: outset;
+  box-shadow: 3px 7px 4px #000000;
 }
 .item-2{
   background-color: #666666;
@@ -32,7 +33,7 @@ body{
   border-radius: 1% 20% 1%;
   font-style: oblique;
   border-style: outset;
-
+  box-shadow: 3px 7px 4px #000000;
 }
 .header{
   font-size: 100%;
@@ -42,19 +43,22 @@ body{
   background-color: #cfd8dc;
   text-align: left;
   text-shadow: 1px 1px #333333;
-  border-radius: 5% 5% 5% 5%;
+  border-radius: 3% 3% 3% 3%;
   border-style: outset;
+  box-shadow: 3px 7px 4px #000000;
 }
 th{
-  grid-column: 20%;
+  grid-column: 50%;
   border-radius: 5% 5% 5% 5%;
+  box-shadow: 3px 7px 4px #000000;
+  padding: 1%;
+  gr
 }
 .networking{
   opacity: 1;
   max-height: 50px;
   max-width: 50px;
   border-style: outset;
-
 }
 .networking:hover{
   opacity: .5;
