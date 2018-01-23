@@ -7,16 +7,16 @@ let minutesToNextTrain;
 
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyBmCE6avmFuqEPrYs2_0FG9xALs4J3Zw9o",
-  authDomain: "choochoo-4076b.firebaseapp.com",
-  databaseURL: "https://choochoo-4076b.firebaseio.com",
-  projectId: "choochoo-4076b",
-  storageBucket: "choochoo-4076b.appspot.com",
-  messagingSenderId: "532821342736"
+  apiKey: "AIzaSyBYVQ3zFv-596GELNTp3dadHQmKlwnbdrM",
+  authDomain: "two-choo.firebaseapp.com",
+  databaseURL: "https://two-choo.firebaseio.com",
+  projectId: "two-choo",
+  storageBucket: "two-choo.appspot.com",
+  messagingSenderId: "1004164577996"
 };
 firebase.initializeApp(config);
 
-
+// Ended up deleted for some reason
 var database = firebase.database();
 
 // 2. Button for adding Trains

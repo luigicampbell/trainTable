@@ -1,6 +1,6 @@
 body{
   background-color: #42a5f5;
-  font-family: 'Supermercado One';
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .wrapper{
   font-size: 65%;
@@ -17,7 +17,6 @@ body{
   color: white;
   text-align: center;
   text-shadow: 5px 1px 5px #000000;
-  font-style: oblique;
   border-radius: 2%;
   opacity: .9;
   box-shadow: 3px 7px 4px #000000;
