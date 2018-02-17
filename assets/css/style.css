@@ -1,5 +1,5 @@
 body{
-  background-color: #42a5f5;
+  background-color: #bbdefb;
   font-family: 'Source Sans Pro', sans-serif;
 }
 .wrapper{
@@ -96,7 +96,19 @@ tr:hover{
 #add-train-btn{
   margin-top: 5%;
   margin-bottom: 5%;
-}
+  background-color: #2196f3;
+  padding: 40px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px 1px #000000;
+  border-radius: 100%;
+  font-style: oblique;
+  box-shadow: 1px 1px 1px 1px #000000;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: sans-serif;
+  font-style: normal;
+  }
 #add-train-btn:hover{
   background-color: #ff8f00;
   box-shadow: 11px 11px 11px rgba(255,255,255, 0.5);

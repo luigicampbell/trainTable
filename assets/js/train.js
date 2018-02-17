@@ -28,6 +28,7 @@ $("#add-train-btn").on("click", function(event) {
   let trainDestination = $("#destination-input").val().trim();
   let trainArrival = moment($("#arrival-input").val().trim(), "HH:mm").format("X");
   let trainFrequency = $("#frequency-input").val().trim();
+  let blah = "blah";
   // Logging values for form inputs
   console.log(trainName);
   console.log(trainDestination);
