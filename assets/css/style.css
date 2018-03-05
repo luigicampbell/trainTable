@@ -1,5 +1,5 @@
 body{
-  background-color: #eeeeee;
+  background-color: #f5f5f5;
   font-family: 'Source Sans Pro', sans-serif;
 }
 .wrapper{
@@ -21,7 +21,7 @@ body{
   box-shadow: 3px 7px 4px #000000;
 }
 .item-3{
-  background-color: #666666;
+  background-color: #424242;
   grid-column: 1 / -1;
   box-shadow: 0px 0px 10px 0px #000000;
   color: white;
@@ -71,11 +71,21 @@ td{
 }
 tr:hover{
   opacity: .8;
-  background-color: #ff8f00;
+  background-color: #ffd54f;
   box-shadow: 11px 11px 11px rgba(255,255,255, 0.5);
   animation: pulse 2s infinite;
 }
-#add-train-btn{
+.btn-primary{
+  background-color: #2196f3;
+  border-style: none;
+  border-radius: 25px;
+  color: white;
+  box-shadow: 0px 0px 10px 0px #000000;
+  text-align: center;
+  text-shadow: 1px 1px 1px 1px #000000;
+  font-style: oblique;
+}
+.add-train-btn{
   margin-top: 5%;
   margin-bottom: 5%;
   background-color: #2196f3;
@@ -91,8 +101,8 @@ tr:hover{
   font-family: sans-serif;
   font-style: normal;
   }
-#add-train-btn:hover{
-  background-color: #ff8f00;
+.add-train-btn:hover{
+  background-color: #01579b;
   box-shadow: 11px 11px 11px rgba(255,255,255, 0.5);
   animation: pulse 2s infinite;
 }

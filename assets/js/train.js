@@ -14,7 +14,43 @@ var config = {
   storageBucket: "two-choo.appspot.com",
   messagingSenderId: "1004164577996"
 };
+
 firebase.initializeApp(config);
+
+// Authentication Registration
+$(".register form").on("submit", function(event){
+  // Allows user to press enter to submit
+  event.preventDefault();
+  // Takes values stored in register, email and password fields
+  var email = $(".register .email").val();
+  var password = $(".register .password").val();
+
+  // Firebase Authentication documentation
+  firebase.auth().createUserWithEmailAndPassword(email, password)
+  .then(function(user){
+    console.log(user);
+  })
+  .catch(function(err){
+    console.log(err);
+  });
+
+});
+
+// Authentication Login
+$(".login form").on("submit", function(event){
+  event.preventDefault();
+  var email = $(".login .email").val();
+  var password = $(".login .password").val();
+
+  firebase.auth().signInWithEmailAndPassword(email, password)
+  .then(function(user) {
+    console.log(user);
+  })
+  .catch(function(err){
+    console.log(err);
+  });
+
+});
 
 // Ended up deleted for some reason
 var database = firebase.database();
