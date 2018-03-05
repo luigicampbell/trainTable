@@ -21,7 +21,6 @@ var database = firebase.database();
 
 // 2. Button for adding Trains
 $("#add-train-btn").on("click", function(event) {
-  // event.preventDefault();
 
   // Grabs user input
   let trainName = $("#train-name-input").val().trim();
@@ -64,7 +63,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
   console.log(childSnapshot.val());
 
-  // Store everything into a letiable.
+  // Store everything into a variable
   let trainName = childSnapshot.val().trainName;
   let trainDestination = childSnapshot.val().trainDestination;
   let trainArrival = childSnapshot.val().trainArrival;
