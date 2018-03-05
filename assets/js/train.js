@@ -21,7 +21,7 @@ var database = firebase.database();
 
 // 2. Button for adding Trains
 $("#add-train-btn").on("click", function(event) {
-  event.preventDefault();
+  // event.preventDefault();
 
   // Grabs user input
   let trainName = $("#train-name-input").val().trim();
