@@ -35,7 +35,7 @@ body{
   float: right;
   background-color: #9e9e9e;
   border-color: black;
-  border-style: groove;
+  border-style: none;
   box-shadow: 0px 0px 10px 0px #000000;
 }
 .form-control:focus{
@@ -44,7 +44,8 @@ body{
   background-color: #ff8f00;
 }
 #train-table{
-  margin-left: 9px;;
+  padding: 10px;
+  margin-left: 9px;
   width: 95%;
   grid-column: 1 / -1;
   background-color: #9e9e9e;
@@ -71,7 +72,7 @@ td{
 }
 tr:hover{
   opacity: .8;
-  background-color: #ffd54f;
+  background-color: #00e676;
   box-shadow: 11px 11px 11px rgba(255,255,255, 0.5);
   animation: pulse 2s infinite;
 }
