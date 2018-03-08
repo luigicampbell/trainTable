@@ -107,13 +107,25 @@ tr:hover{
   box-shadow: 11px 11px 11px rgba(255,255,255, 0.5);
   animation: pulse 2s infinite;
 }
-.add-train-btn:focus {outline: none; }
+.add-train-btn:focus {
+  outline: none;
+}
 #connect{
   background-color: #424242;
   margin-top: 5%;
   box-shadow: 3px 7px 4px #000000;
 }
-#connect:focus {outline: none; }
+#connect:focus {
+  outline: none;
+}
+.btn-primary:hover{
+  background-color: #01579b;
+  box-shadow: 11px 11px 11px rgba(255,255,255, 0.5);
+  animation: pulse 2s infinite;
+}
+.btn-primary:focus{
+  outline: none;
+}
 @-webkit-keyframes pulse {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);

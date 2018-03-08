@@ -48,6 +48,7 @@ $(".login form").on("submit", function(event){
   firebase.auth().signInWithEmailAndPassword(email, password)
   .then(function(user) {
     console.log(user);
+
   })
   .catch(function(err){
     console.log(err);
@@ -60,9 +61,12 @@ firebase.auth().onAuthStateChanged(function(user){
     console.log(`Welcome ${user.email}!`);
     // enable add train button
     $(".add-train-btn").removeAttr("disabled");
+    // Clear text areas
+    // $("input[type='text'], textarea").val('');
   }
   else{
     console.log(`Please logon to proceed`);
+    // Add Modal
   }
 });
 
